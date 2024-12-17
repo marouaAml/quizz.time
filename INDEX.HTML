@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interactif</title>
+    <link rel="stylesheet" href="./css/STYLE.CSS">
+</head>
+<body>
+    <!-- Page d'accueil -->
+    <div id="home-page" class="page">
+        <h1>Bienvenue au Quiz </h1>
+    </div>
+       
+      <!-- image du quiz -->
+       <img src="./image/photo.webp" id =image1 class="image">
+
+         <!-- Règles du quiz -->
+    <div id="regles" >
+        <h2>Règles du Quiz</h2>
+           <a> Vous avez 15 secondes pour répondre à chaque question.</a><br>
+           <a>Chaque bonne réponse vous rapporte un point.</a><br>
+           <a>Les réponses seront vérifiées en temps réel.</a><br>
+           <a>Si le temps est écoulé, la réponse correcte sera affichée.</a><br>
+           <a>À la fin du quiz, votre score total sera affiché.</a><br>
+        <button onclick="startQuiz()">Démarrer le Quiz</button>
+    </div>
+ 
+    <!-- Interface du quiz -->
+<div id="quizContainer" style="display: none;">
+    <div id="timer">Temps restant: 15</div>
+    <div id="question"></div>
+    <div id="answers"></div>
+</div>
+
+ 
+    <!-- Résultats -->
+    <div id="result-page" class="page" style="display: none;">
+        <h2>Résultats</h2>
+        <p id="score">Score: 0</p>
+        <button id="Rejouer">Rejouer</button>
+        <button id="Quitter">Quitter</button>
+    </div>
+
+    <script src="javascript/CD.JS"></script>
+</body>
+</html>
